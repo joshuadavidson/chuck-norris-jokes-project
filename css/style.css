@@ -1,0 +1,107 @@
+/*Add a full page background image for use in html tagtest*/
+
+body {
+  font-family: 'Open-Sans', sans-serif;
+  background: transparent;
+  color: black;
+}
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: rgb(50, 50, 50);
+}
+a:active {
+  color: white;
+}
+
+/* IDs */
+
+#joke-block {
+  font-size: 25px;
+}
+#button-block {
+  font-size: 25px;
+}
+#social-block {
+  font-size: 25px;
+}
+#credits-block {
+  font-size: 10px;
+}
+#main-row {
+  margin: 20% auto auto auto;
+}
+
+/* Created classes*/
+
+@media (min-width: 992px) {
+  .full-background {
+    background: url(../img/chuck-norris-left.jpg) no-repeat left center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #main-row {
+    position: relative;
+    margin: 20% auto auto auto;
+  }
+}
+@media (max-width: 991px) {
+  .full-background {
+    background: none;
+  }
+  #main-row {
+    margin: 10px 10px 10px 10px;
+  }
+}
+.icon-link {
+  color: inherit;
+  text-decoration: none;
+}
+.btn-black {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+/* Custom Bootstrap button */
+
+.btn-black:hover, .btn-black:focus, .btn-black:active, .btn-black.active, .open .dropdown-toggle.btn-black {
+  color: #ffffff;
+  background-color: #323232;
+  border-color: #000000;
+}
+.btn-black:active, .btn-black.active, .open .dropdown-toggle.btn-black {
+  background-image: none;
+}
+.btn-black.disabled, .btn-black[disabled], fieldset[disabled] .btn-black, .btn-black.disabled:hover, .btn-black[disabled]:hover, fieldset[disabled] .btn-black:hover, .btn-black.disabled:focus, .btn-black[disabled]:focus, fieldset[disabled] .btn-black:focus, .btn-black.disabled:active, .btn-black[disabled]:active, fieldset[disabled] .btn-black:active, .btn-black.disabled.active, .btn-black[disabled].active, fieldset[disabled] .btn-black.active {
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-black .badge {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Modified bootstrap classes */
+
+.panel {
+  background-color: white;
+  border-color: white;
+}
+.row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

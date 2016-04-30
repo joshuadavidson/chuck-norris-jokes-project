@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html class="full-background" lang="en">
+
+<head>
+  <title>Chuck Norris Random Joke Generator</title>
+
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <!-- OG properties -->
+  <meta property="fb:app_id" content="442837305905188" />
+  <meta property="og:url" content="http://www.jwaynedavidson.com/projects/chuck-norris/jokes.html" />
+  <meta property="og:title" content="Chuck Norris Random Joke Generator" />
+  <meta property="og:image" content="http://www.jwaynedavidson.com/projects/chuck-norris/img/chuck-norris-left.jpg" />
+
+  <!-- Links -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="../../scripts/gatracking.js"></script>
+</head>
+
+
+<body>
+
+  <div class="container-fluid">
+    <!--Quote Panel-->
+    <div class="row" id="main-row">
+      <div class="col-md-6 col-md-offset-5">
+        <div class="row panel panel-default panel-body">
+
+          <div class="row" id="button-block">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+              <button id="get-joke-btn" type="button" class="btn btn-black btn-lg">Get Another!</button>
+            </div>
+          </div>
+
+          <div class="row" id="joke-block">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+              <i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>
+              <span id="joke-text"></span>
+              <i class="fa fa-quote-right fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="row" id="social-block">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+
+              <!-- Twitter link -->
+              <a class="icon-link" id="tweet-link" href="http://twitter.com/home/?status=Random%20Chuck%20Norris%20Jokes%3F%20Oh%2C%20yeah!%20%23chucknorris%20http%3A%2F%2Fwww.jwaynedavidson.com%2Fprojects%2Fchuck-norris%2Fjokes.html" target="_blank">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+
+              <!-- Facebook link -->
+              <a class="icon-link" id="fb-share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.jwaynedavidson.com/projects/chuck-norris/jokes.html" target="_blank">
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+
+              <!-- Pinterest link -->
+              <a class="icon-link" id="pin-link" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.jwaynedavidson.com%2Fprojects%2Fchuck-norris%2Fjokes.html&media=http%3A%2F%2Fwww.jwaynedavidson.com%2Fprojects%2Fchuck-norris%2Fimg%2Fchuck-norris-left.jpg&description=Chuck%20Norris%20Random%20Joke%20Generator"
+                  target="_blank">
+                <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+
+            </div>
+          </div>
+
+          <div class="row" id="credits-block">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+              Coded by <a href="http://www.jwaynedavidson.com">Joshua Davidson</a>
+              <br> Joke #<span id="joke-number"></span> from <a href="http://www.icndb.com/">http://www.icndb.com/</a>
+              <br> <a href="https://www.flickr.com/photos/92147157@N07/8377019152">"Chuck Norris"</a> by <a href="https://www.flickr.com/photos/92147157@N07/">Jason H. Smith</a>
+              <br>used under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY</a> / Cropped &amp; resized from original
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
