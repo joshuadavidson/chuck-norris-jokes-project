@@ -5,7 +5,7 @@ function getNewJoke() {
   $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]", function(json) {
     currJoke = json.value.joke;
     $("#joke-text").html(json.value.joke);
-    $("#joke-number").html(json.value.id)
+    $("#joke-number").html(json.value.id);
   });
 }
 
