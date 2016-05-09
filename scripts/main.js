@@ -1,6 +1,7 @@
 //Global variable for current joke.
 var currJoke = "";
 //function that pulls a joke and formats it for readability.
+//Needs https functionality to fulfill same-origin policy
 function getNewJoke() {
   $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]", function(json) {
     currJoke = json.value.joke;
