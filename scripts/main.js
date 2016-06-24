@@ -3,7 +3,7 @@ var currJoke = "";
 //function that pulls a joke and formats it for readability.
 //Needs https functionality to fulfill same-origin policy
 function getNewJoke() {
-  $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]", function(json) {
+  $.getJSON("https://api.icndb.com/jokes/random?exclude=[explicit]", function(json) {
     currJoke = json.value.joke;
     $("#joke-text").html(json.value.joke);
     $("#joke-number").html(json.value.id);
