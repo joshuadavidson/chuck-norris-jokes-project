@@ -10,11 +10,9 @@ h2 {
 a {
   text-decoration: none;
 }
-a:link {
+a:link, a:visited {
   color: black;
-}
-a:visited {
-  color: black;
+  text-decoration: none;
 }
 a:hover {
   color: rgb(50, 50, 50);
@@ -23,8 +21,8 @@ a:active {
   color: white;
 }
 
-/* IDs */
 
+/* IDs */
 #joke-block {
   font-size: 25px;
 }
@@ -42,10 +40,9 @@ a:active {
 }
 
 /* Created classes*/
-
 @media (min-width: 992px) {
   .full-background {
-    background: url(../img/chuck-norris-left.jpg) no-repeat left center fixed;
+    background: url(./img/chuck-norris-left.jpg) no-repeat left center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -75,7 +72,6 @@ a:active {
 }
 
 /* Custom Bootstrap button */
-
 .btn-black:hover, .btn-black:focus, .btn-black:active, .btn-black.active, .open .dropdown-toggle.btn-black {
   color: #ffffff;
   background-color: #323232;

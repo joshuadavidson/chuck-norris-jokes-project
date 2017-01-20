@@ -1,0 +1,26 @@
+{
+  "name": "chuck-norris-jokes-project",
+  "version": "1.0.0",
+  "description": "Small app that offers up random Chuck Norris jokes using the icndb.com API.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --progress --colors",
+    "build": "webpack --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuadavidson/chuck-norris-jokes-project.git"
+  },
+  "author": "Joshua Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuadavidson/chuck-norris-jokes-project/issues"
+  },
+  "homepage": "https://github.com/joshuadavidson/chuck-norris-jokes-project#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "^1.14.0"
+  }
+}
