@@ -1,5 +1,10 @@
 /* establish global variables for ESLint */
-/* global $ document window */
+/* global $ window */
+
+import $ from 'jquery';
+
+// import custom styles for project
+import './index.scss';
 
 // function that pulls a joke and formats it for readability
 function getNewJoke() {
